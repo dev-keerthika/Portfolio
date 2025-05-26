@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" href="style.css">
+<title>Portfolio</title>
+<style>
+   * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #000000; 
+    color: #eee;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+  }
+ 
+  nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #111;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 12px 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(255,255,255,0.1);
+  }
+  nav a {
+    color: #eee;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 6px 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  nav a:hover {
+    background-color: #444;
+  }
+
+  /* Container */
+  .container {
+    max-width: 900px;
+    margin: 90px auto 40px; /* leave space for nav */
+    padding: 0 20px;
+  }
+
+  /* Sections */
+  section, header {
+    margin-bottom: 60px;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 0.8s forwards;
+  }
+  /* Animation delay for each section */
+  header { animation-delay: 0.2s; }
+  #about-me { animation-delay: 0.4s; }
+  #academics { animation-delay: 0.6s; }
+  #skills { animation-delay: 1s; }
+  #experience { animation-delay: 1.2s; }
+  #extracurricular { animation-delay: 1.2s; }
+  #achievements { animation-delay: 1.4s; }
+  #projects { animation-delay: 0.8s; }
+  #membership { animation-delay: 1.6s; }
+  #contact { animation-delay: 1.8s; }
+
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Headings */
+  h1, h2 {
+    color: #fff;
+    margin-bottom: 15px;
+    letter-spacing: 1.1px;
+  }
+  h1 {
+    font-size: 2.8rem;
+    text-align: center;
+  }
+  h2 {
+    font-size: 2rem;
+    border-bottom: 2px solid #555;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+  }
+
+  /* Paragraph */
+  p {
+    font-size: 1.1rem;
+    color: #ddd;
+  }
+
+  /* Lists */
+  ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    color: #ccc;
+  }
+  ul.project-list {
+    list-style-type: none;
+  }
+  ul.project-list li {
+    background-color: #111;
+    margin-bottom: 12px;
+    padding: 12px 15px;
+    border-radius: 8px;
+    transition: box-shadow 0.3s ease;
+  }
+  ul.project-list li:hover {
+    box-shadow: 0 0 15px #555;
+  }
+  .project-title {
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    color: #fff;
+  }
+  .project-desc {
+    font-size: 1rem;
+    color: #bbb;
+  }
+
+  /* Links */
+  a {
+    color: #6cf;
+    transition: color 0.3s ease;
+  }
+  a:hover {
+    color: rgb(230, 31, 217);
+  }
+
+  /* Contact */
+  #contact p {
+    margin-bottom: 10px;
+  }
+</style>
+</head>
+<body>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about-me">About Me</a>
+    <a href="#academics">Academics</a>
+    <a href="#skills">Skills</a>
+    <a href="#achievements">Achievements</a>
+    <a href="#Domains">Domains</a>
+    <a href="#experience">Experience</a>
+    <a href="#membership">Membership</a>
+    <a href="#extracurricular">Extra Curricular</a>
+    <a href='#social_links'>Online Platforms</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <div class="container">
+
+    
+    <div style="text-align: right; margin: 20px;">
+  <img src="profile.jpg" alt="Keerthika" class="profile-pic-right">
+</div>
+
+
+    <!-- Home -->
+    <header id="home">
+      <h1>I'm Keerthika</h1>
+      <p><center>Hello! I'm so glad to see you here 😊 </center><br></p>
+      <p style="line-height: 2;">Welcome to my portfolio, where I’ve showcased not just my skills—but the journey, passion, and effort behind them. Every step has shaped me
+      into the engineer I'm becoming. While many may say they don’t enjoy engineering, I’ve fallen in love with it deeply and completely. I'm exploring it in every possible ways.
+      Thank you for taking the time to stop by. </p>
+      <p> Let’s take a little walk through my work!!!</p>
+    </header>
+
+
+
+    <!-- About Me -->
+    <section id="about-me">
+      <h2>About Me</h2>
+      <p style="line-height: 2;">Hello! I'm Keerthika, a passionate engineering student who thrives on continuous learning and exploration. I view engineering as a broad journey, one that goes beyond textbooks and classrooms. Whether it’s academics, volunteering with NSS, participating in hackathons, delivering presentations, or engaging in extracurriculars, I believe in gaining knowledge from every opportunity. I’m always eager to learn something new, expand my skills, and grow both personally and professionally.</p>
+      <br>
+      <br>
+      <br>
+    </section>
+
+
+  <!-- Academics Section with Image -->
+   <section id="academics"></section>
+   <h2>Academics</h2>
+  
+  <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 30px;">
+    
+    <!-- Image -->
+    <div style="flex: 1; min-width: 250px;">
+      <img src="academic.jpg" alt="Keerthika" class="profile-pic-right1" style="width: 100%; max-width: 300px; border-radius: 5px; box-shadow: 0 4px 10px rgba(0,0,0,0.15);">
+    </div>
+    
+    <!-- Text Content -->
+    <div style="flex: 2; min-width: 280px;">
+      <p style="line-height: 1.7; font-size: 16px;">
+        I have a keen interest in subjects related to software development, Operating Systems, and Database concepts. <br><br>
+        Beyond just grades, my academic journey is shaping a mindset of continuous learning, curiosity, and real-time application of concepts. 
+        This mindset has helped me maintain a strong academic record with a <strong>9.17 CGPA</strong>. <br><br>
+        I believe that knowledge becomes truly powerful when applied, and I’m always exploring ways to bridge theory with practice.
+      </p>
+    </div>
+    
+  </div>
+</section>
+
+
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul>
+        <li>Programming Languages: Java, Python, C</li><br>
+        <li>Problem Solving ability </li><br>
+        <li>Leadership</li><br>
+        <li>Logical Thinking</li><br>
+        <li>Time Management</li><br>
+      </ul>
+    </section>
+
+
+
+    <!-- Achievements -->
+
+    <section id="achievements">
+      <h2>Achievements</h2>
+      <ul>
+        <li>Secured 2nd prize in Science Club Paper Presentation</li>
+        <li>Selected for Round 2 of Smart India Hackathon (SIH) – Intracollegiate Level, recognized for innovative solution proposal and team performance</li>
+        <li>Won 3rd prize in Women Development Cell's speech competition</li>
+        <li>Consistently recognized as a rank holder across semesters for maintaining academic excellence</li>
+      </ul>
+    </section>
+
+    <!-- Domains -->
+   <section id="Domains">
+  <h2>Domains</h2>
+  <ul class="project-list">
+    <li>
+      <div class="project-title">Full Stack Development</div>
+      <div class="project-desc">
+        <ul> <!-- add this -->
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>React</li>
+        </ul> <!-- close this -->
+      </div>
+    </li>
+    
+    <li>
+      <div class="project-title">Artificial Intelligence and Machine learning</div><br>
+      <div class="project-desc">
+        <ul><li>Basics of AI/ML</li></ul>
+      </div>
+    </li>
+  </ul>
+</section>
+
+    </section>
+
+    <!--Experience-->
+  <section id="experience">
+  <h2>Experience</h2>
+  <ul class="achievement-list" style="font-size: 10px; line-height: 1; margin-left: 20px;">
+    <li>Participated in <strong>IIT Shaastra AI & ML Challenge</strong></li>
+    <li>Participated in <strong>Smart India Hackathon</strong> – Selected for 2nd Round</li>
+    <li>Presented innovative ideas at <strong>MSME</strong> platform</li><br>
+    <li>Idea selected at <strong>Hack$Pondy Hackathon</strong></li><br>
+    <li>Visited <strong>IIT Madras</strong> for Shaastra Hackathon event</li><br>
+    <li>Idea shortlisted at <strong>S&T Hackathon</strong> organized by IIT Guwahati</li><br>
+    <li>Idea selected at <strong>VIT Bhopal Hackathon</strong>, Madhya Pradesh</li><br>
+  </ul>
+</section>
+
+
+
+    <!-- Membership -->
+    <section id="membership">
+      <h2>Membership</h2>
+      <ul>
+        <strong>Member of</strong><br>
+        <li>Tamil Mandram</li><br>
+        <li>Indian Society for Technical Education (ISTE)</li><br>
+        <li>Computer Society of India (CSI)</li><br>
+        <li>National Service Scheme (NSS) </li><br>
+      </ul>
+    </section>
+
+
+        <!-- Extra Curricular -->
+    <section id="extracurricular">
+      <h2>Extra Curricular Activities</h2>
+      <ul>
+        <li>Active member of NSS (National Service Scheme)</li><br>
+        <li>Presented Technical Papers at various symposiums across Institution</li><br>
+        <li>Participated in Multiple Hackathons</li><br>
+      </ul>
+    </section>  
+
+         <!-- Social Links -->
+    <section id="social_links">
+      <h2>Online Platforms</h2>
+      <ul>
+        <p>Linkedin: <a href="https://www.linkedin.com/in/keerthika5/">www.linkedin.com/in/keerthika5/</a></p>
+        <p>Leetcode: <a href="https://leetcode.com/u/Keerthika_5/">https://leetcode.com/u/Keerthika_5/</a></p>
+        <p>HackerRank: <a href="https://www.hackerrank.com/profile/keerthika190805">https://www.hackerrank.com/profile/keerthika190805</a></p>
+        <p>codechef: <a href="https://www.codechef.com/users/troop_array_25">https://www.codechef.com/users/troop_array_25</a></p>
+        <p>Github: <a href="https://github.com/dev-keerthika">https://github.com/dev-keerthika</a></p>
+<br>
+<br>
+      </ul>
+    </section>  
+
+
+    <!-- Contact -->
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <p>Email: <a href="keerthika190805@gmail.com">keerthika190805@gmail.com</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/keerthika5/" >linkedin.com/in/keerthika5/</a></p>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+    </section>
+  </div>
+
+</body>
+</html>
